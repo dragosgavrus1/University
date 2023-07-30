@@ -1,2 +1,2 @@
 # University
-Projects from university
+Projects from university such as tests, exams and assignments.
