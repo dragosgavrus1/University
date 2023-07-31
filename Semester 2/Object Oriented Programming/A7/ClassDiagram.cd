@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AdminService" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAQAADAAAAQAAAAAAAAIAAAABAAAAA=</HashCode>
+      <FileName>AdminService.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrenchCoat" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAABAAIAAIAAAAgAAIAAARAAAAAAACGQAAAiAARAAEA=</HashCode>
+      <FileName>Coat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CsvShoppingBasket" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABAAQAAA=</HashCode>
+      <FileName>CsvShoppingBasket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileException" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileShoppingBasket" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAABAAAABAAAAABAAQAAA=</HashCode>
+      <FileName>FileShoppingBasket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HtmlShoppingBasket" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAABAAQAAA=</HashCode>
+      <FileName>HtmlShoppingBasket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Repository" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABJJIIAEAAICAAAAgAAAAAAAAAAAAAAABgAAAAA=</HashCode>
+      <FileName>Repository.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShoppinBasket" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAIQACAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppinBasket.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tests" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABAAAAABAAAAAAAAAAAAAAEAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Tests.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Console" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAIAgICBAAAAAAASAIACQAhAAAAAAABAgAA=</HashCode>
+      <FileName>Ui.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserService" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAAAAQAAAAgAgAIAAAAQBAIEAAAAAAgAA=</HashCode>
+      <FileName>UserService.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

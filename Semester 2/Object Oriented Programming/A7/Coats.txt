@@ -1,0 +1,12 @@
+S,Beige,1700,112,https://ro.burberry.com/c/the-trench-coat/
+M,Black,200,280,https://www.farfetch.com/
+L,Red,175,300,https://www.amazon.com/mens-trench-coat/s?k=mens+trench+coat
+XL,Gray,56,1000,https://www.amazon.com/mens-trench-coat/s?k=mens+trench+coat
+M,White,75,2500,https://www.amazon.com/mens-trench-coat/s?k=mens+trench+coat
+L,Brown,120,3100,https://www.amazon.com/mens-trench-coat/s?k=mens+trench+coat
+S,Green,1359,300,https://www.farfetch.com/
+L,Blue,84,5000,https://www.asos.com/men/jackets-coats/trench-coats/cat/?cid=11902
+S,Yellow,164,4250,https://www.asos.com/men/jackets-coats/trench-coats/cat/?cid=11902
+L,Cactus,1800,500,https://www.goat.com/
+L,Purple,100,200,http
+S,Pink,1000,200,htp
