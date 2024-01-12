@@ -1,0 +1,491 @@
+Program ID: 9
+ExeStack:
+int v
+v=5
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+v=5
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+v=5
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 0
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 5
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 5
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 5
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 5
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 5
+
+Output:
+5
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 4
+
+Output:
+5
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 4
+
+Output:
+5
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 4
+
+Output:
+5
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 4
+
+Output:
+5
+4
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 3
+
+Output:
+5
+4
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 3
+
+Output:
+5
+4
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 3
+
+Output:
+5
+4
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 3
+
+Output:
+5
+4
+3
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 2
+
+Output:
+5
+4
+3
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 2
+
+Output:
+5
+4
+3
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 2
+
+Output:
+5
+4
+3
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 2
+
+Output:
+5
+4
+3
+2
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 1
+
+Output:
+5
+4
+3
+2
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 1
+
+Output:
+5
+4
+3
+2
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 1
+
+Output:
+5
+4
+3
+2
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+v=((v)-1)
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 1
+
+Output:
+5
+4
+3
+2
+1
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+while((v)>0) {print (v); v=((v)-1)}
+print (v)
+
+SymTable:
+v = 0
+
+Output:
+5
+4
+3
+2
+1
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+print (v)
+
+SymTable:
+v = 0
+
+Output:
+5
+4
+3
+2
+1
+
+File Table:
+
+Heap:
+
+
+Program ID: 9
+ExeStack:
+
+SymTable:
+v = 0
+
+Output:
+5
+4
+3
+2
+1
+0
+
+File Table:
+
+Heap:
+
+

@@ -1,0 +1,278 @@
+ExeStack:
+string varf
+varf=test.in
+OpenReadFile((varf))
+int varc
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+
+Output:
+
+File Table:
+
+
+ExeStack:
+varf=test.in
+OpenReadFile((varf))
+int varc
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = 
+
+Output:
+
+File Table:
+
+
+ExeStack:
+varf=test.in
+OpenReadFile((varf))
+int varc
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = 
+
+Output:
+
+File Table:
+
+
+ExeStack:
+OpenReadFile((varf))
+int varc
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+
+Output:
+
+File Table:
+
+
+ExeStack:
+OpenReadFile((varf))
+int varc
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+
+Output:
+
+File Table:
+
+
+ExeStack:
+int varc
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+
+Output:
+
+File Table:
+test.in
+
+
+ExeStack:
+int varc
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+
+Output:
+
+File Table:
+test.in
+
+
+ExeStack:
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 0
+
+Output:
+
+File Table:
+test.in
+
+
+ExeStack:
+ReadFile((varf), varc)
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 0
+
+Output:
+
+File Table:
+test.in
+
+
+ExeStack:
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 15
+
+Output:
+
+File Table:
+test.in
+
+
+ExeStack:
+print (varc)
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 15
+
+Output:
+
+File Table:
+test.in
+
+
+ExeStack:
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 15
+
+Output:
+15
+
+File Table:
+test.in
+
+
+ExeStack:
+ReadFile((varf), varc)
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 15
+
+Output:
+15
+
+File Table:
+test.in
+
+
+ExeStack:
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 50
+
+Output:
+15
+
+File Table:
+test.in
+
+
+ExeStack:
+print (varc)
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 50
+
+Output:
+15
+
+File Table:
+test.in
+
+
+ExeStack:
+CloseFile((varf))
+
+SymTable:
+varf = test.in
+varc = 50
+
+Output:
+15
+50
+
+File Table:
+test.in
+
+
+ExeStack:
+
+SymTable:
+varf = test.in
+varc = 50
+
+Output:
+15
+50
+
+File Table:
+
+

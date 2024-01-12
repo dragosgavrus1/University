@@ -1,0 +1,198 @@
+Program ID: 8
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, (v))
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 8
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, (v))
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+v = (0, int)
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 8
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, (v))
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+v = (0, int)
+
+Output:
+
+File Table:
+
+Heap:
+
+
+Program ID: 8
+ExeStack:
+Ref(Ref(int)) a
+new(a, (v))
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+v = (1, int)
+
+Output:
+
+File Table:
+
+Heap:
+20
+
+
+Program ID: 8
+ExeStack:
+Ref(Ref(int)) a
+new(a, (v))
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+v = (1, int)
+
+Output:
+
+File Table:
+
+Heap:
+20
+
+
+Program ID: 8
+ExeStack:
+new(a, (v))
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+a = (0, Ref(int))
+v = (1, int)
+
+Output:
+
+File Table:
+
+Heap:
+20
+
+
+Program ID: 8
+ExeStack:
+new(a, (v))
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+a = (0, Ref(int))
+v = (1, int)
+
+Output:
+
+File Table:
+
+Heap:
+20
+
+
+Program ID: 8
+ExeStack:
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+a = (2, Ref(int))
+v = (1, int)
+
+Output:
+
+File Table:
+
+Heap:
+20
+(1, int)
+
+
+Program ID: 8
+ExeStack:
+new(v, 30)
+print readHeap(readHeap((a)))
+
+SymTable:
+a = (2, Ref(int))
+v = (1, int)
+
+Output:
+
+File Table:
+
+Heap:
+20
+(1, int)
+
+
+Program ID: 8
+ExeStack:
+print readHeap(readHeap((a)))
+
+SymTable:
+a = (2, Ref(int))
+v = (3, int)
+
+Output:
+
+File Table:
+
+Heap:
+20
+(1, int)
+30
+
+
+Program ID: 8
+ExeStack:
+
+SymTable:
+a = (2, Ref(int))
+v = (3, int)
+
+Output:
+20
+
+File Table:
+
+Heap:
+20
+(1, int)
+30
+
+
