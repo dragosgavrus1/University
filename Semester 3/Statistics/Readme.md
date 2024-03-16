@@ -1,1 +1,1 @@
-Statistics course using octave.
+Matlab work for the statics course Lab.
