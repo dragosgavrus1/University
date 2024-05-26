@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Art Auction Platform", "Art Auction Platform.vcxproj", "{A48ACBD4-23D8-4E9C-B3EF-0F3C86E46F04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A48ACBD4-23D8-4E9C-B3EF-0F3C86E46F04}.Debug|x64.ActiveCfg = Debug|x64
+		{A48ACBD4-23D8-4E9C-B3EF-0F3C86E46F04}.Debug|x64.Build.0 = Debug|x64
+		{A48ACBD4-23D8-4E9C-B3EF-0F3C86E46F04}.Release|x64.ActiveCfg = Release|x64
+		{A48ACBD4-23D8-4E9C-B3EF-0F3C86E46F04}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE6E4329-91D0-4C64-B447-5905C3DF2124}
+	EndGlobalSection
+EndGlobal

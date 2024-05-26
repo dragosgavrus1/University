@@ -1,0 +1,4 @@
+John|administrator|2
+Anna|collector|1
+Marry|collector|5
+Ben|administrator|6
