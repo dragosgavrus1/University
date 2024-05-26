@@ -1,0 +1,11 @@
+﻿  App.cpp
+  ExtendedTest.cpp
+C:\Users\drago\Desktop\Sem 2\Data Structures\Set\ExtendedTest.cpp(165,20): warning C4101: 'e': unreferenced local variable
+C:\Users\drago\Desktop\Sem 2\Data Structures\Set\ExtendedTest.cpp(172,20): warning C4101: 'ex': unreferenced local variable
+C:\Users\drago\Desktop\Sem 2\Data Structures\Set\ExtendedTest.cpp(226,20): warning C4101: 'ex': unreferenced local variable
+C:\Users\drago\Desktop\Sem 2\Data Structures\Set\ExtendedTest.cpp(233,20): warning C4101: 'ex': unreferenced local variable
+  Set.cpp
+  SetIterator.cpp
+  ShortTest.cpp
+  Generating Code...
+  Set.vcxproj -> C:\Users\drago\Desktop\Sem 2\Data Structures\Set\x64\Debug\Set.exe
