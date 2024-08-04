@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Game</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .game-image {
+        position: absolute;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var score = 0;
+        var winScore = 10;
+        var gameInProgress = false;
+        var imageDuration = 2000; 
+
+        function getRandomPosition() {
+                var windowWidth = $(window).width() - 100;
+                var windowHeight = $(window).height() - 100;
+                var randomX = Math.floor(Math.random() * windowWidth);
+                var randomY = Math.floor(Math.random() * windowHeight);
+                return { x: randomX, y: randomY };
+        }
+
+        function createImage() {
+            var $img = $('<img class="game-image" src="ship.jpg" alt="game image">');
+            var position = getRandomPosition();
+            $img.css({ top: position.y, left: position.x, width: '100px', height: '100px'});
+            $('body').append($img);
+            setTimeout(function() {
+                $img.remove();
+                if (gameInProgress) {
+                    createImage();
+                }
+            }, imageDuration);
+            $img.on('click', function() {
+                score++;
+                $('#score').text(score);
+                if (score >= winScore) {
+                    alert("You won!");
+                    gameInProgress = false;
+                }
+                $(this).remove();
+            });
+        }
+
+        $(document).on('click', '#start-game', function() {
+            score = 0;
+            $('#score').text(score);
+            gameInProgress = true;
+            createImage();
+        });
+
+        
+    });
+</script>
+
+<button id="start-game">Start Game</button>
+<p>Score: <span id="score">0</span></p>
+
+</body>
+</html>
