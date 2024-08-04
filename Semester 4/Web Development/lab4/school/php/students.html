@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student List</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<h2>Student List</h2>
+<div>
+    <label for="groupId">Group ID:</label>
+    <input type="text" id="groupId" name="groupId">
+    <button onclick="getStudentList(document.getElementById('groupId').value, 1)">Search</button>
+</div>
+
+<div id="studentList"></div>
+
+<div class="pagination">
+    <button id="prevBtn" onclick="prevPage()">Previous</button>
+    <button id="nextBtn" onclick="nextPage()">Next</button>
+</div>
+
+<div id="gradesContainer"></div>
+
+
+
+<script>
+// Function to retrieve student list via AJAX
+let currentPage = 1;
+const groupId = 923; // Replace with the actual group ID
+let student_id;
+
+function getStudentList(group_id, page) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'read_students.php?group_id=' + group_id + '&page=' + page, true);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            const data = JSON.parse(xhr.responseText);
+            if (data.length > 0) {
+                let tableHtml = '<table>';
+                tableHtml += '<tr><th>ID</th><th>Name</th><th>Password</th><th>Group ID</th></tr>';
+                data.forEach(student => {
+                    tableHtml += '<tr>';
+                    tableHtml += '<td>' + student.id + '</td>';
+                    tableHtml += '<td>' + student.name + '</td>';
+                    tableHtml += '<td>' + student.password + '</td>';
+                    tableHtml += '<td>' + student.group_id + '</td>';
+                    tableHtml += '<td><button onclick="fetchGrades(' + student.id + ')">View Grades</button></td>';
+                    tableHtml += '</tr>';
+                });
+                tableHtml += '</table>';
+                document.getElementById('studentList').innerHTML = tableHtml;
+                document.getElementById('gradesContainer').innerHTML = ''; 
+            } else {
+                document.getElementById('studentList').innerHTML = 'No students found for this group.';
+            }
+        } else {
+            console.error('Error:', xhr.status);
+        }
+    };
+    xhr.onerror = function() {
+        console.error('Request failed');
+    };
+    xhr.send();
+}
+
+
+
+// Function to go to the previous page
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        getStudentList(groupId, currentPage);
+    }
+}
+
+// Function to go to the next page
+function nextPage() {
+    currentPage++;
+    getStudentList(groupId, currentPage);
+}
+
+function fetchGrades(studentId) {
+    fetch('read_grades.php?student_id=' + studentId)
+        .then(response => response.json())
+        .then(data => {
+            // Process the retrieved data and display grades
+            student_id = studentId;
+            displayGrades(data);
+        })
+        .catch(error => console.error('Error:', error));
+}
+
+function addGrade(studentId, grade, course) {
+    // Check if all required parameters are provided
+    if (studentId && grade && course) {
+        const data = {
+            student_id: studentId,
+            grade: grade,
+            course: course
+        };
+
+        // Make a POST request to the server-side PHP script to add the grade
+        fetch('add_grade.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            // Handle the result of adding the grade
+            console.log(result);
+            // Reload the grades for the current student
+            fetchGrades(studentId);
+        })
+        .catch(error => console.error('Error:', error));
+    } else {
+        // Alert user if any of the required parameters are missing
+        alert('Please enter grade and course');
+    }
+}
+
+
+function editGrade(gradeId, course, grade) {
+    if(course && grade)
+    {
+        const data = {
+            grade_id: gradeId,
+            grade: grade,
+            course: course
+        };
+
+        fetch('edit_grade.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(result => {
+            console.log(result);
+            fetchGrades(student_id); // Refresh grades after editing
+        })
+        .catch(error => console.error('Error:', error));
+    }
+}
+
+
+
+// Function to display grades for a specific student
+function displayGrades(grades) {
+    const gradesContainer = document.getElementById('gradesContainer');
+    gradesContainer.innerHTML = ''; // Clear previous content
+    
+    // Create a table to display grades
+    const gradesTable = document.createElement('table');
+    gradesTable.innerHTML = '<tr><th>Course</th><th>Grade</th><th>Actions</th></tr>';
+    
+    grades.forEach(grade => {
+        const row = gradesTable.insertRow();
+        const courseCell = row.insertCell(0);
+        const gradeCell = row.insertCell(1);
+        const actionsCell = row.insertCell(2);
+
+        courseCell.textContent = grade.course;
+        gradeCell.textContent = grade.grade;
+        
+        // Create an Edit button for each grade
+        const editButton = document.createElement('button');
+        editButton.textContent = 'Edit';
+        editButton.id = grade.grade_id;
+        editButton.addEventListener('click', () => {
+            editGrade(grade.grade_id,courseEditInput.value,  parseInt(gradeEditInput.value));
+        });
+        actionsCell.appendChild(editButton);
+    });
+    
+    gradesContainer.appendChild(gradesTable); // Append grades table to grades container
+
+    // Add an "Add Grade" button after the table
+    const addButton = document.createElement('button');
+    addButton.textContent = 'Add Grade';
+    addButton.addEventListener('click', () => {
+        const grade = parseInt(gradeInput.value);
+        const course = courseInput.value;
+        addGrade(student_id, grade, course);
+    });
+    gradesContainer.appendChild(addButton);
+
+    const gradeInput = document.createElement('input');
+    gradeInput.type = 'number';
+    gradeInput.placeholder = 'Grade';
+    gradesContainer.appendChild(gradeInput);
+
+    const courseInput = document.createElement('input');
+    courseInput.type = 'text';
+    courseInput.placeholder = 'Course';
+    gradesContainer.appendChild(courseInput);
+    gradesContainer.appendChild(document.createElement('br'));
+
+    const label = document.createElement('label');
+    label.textContent = 'Edit Grade:  ';
+    gradesContainer.appendChild(label);
+
+    const gradeEditInput = document.createElement('input');
+    gradeEditInput.type = 'number';
+    gradeEditInput.placeholder = 'New Grade';
+    gradesContainer.appendChild(gradeEditInput);
+
+    const courseEditInput = document.createElement('input');
+    courseEditInput.type = 'text';
+    courseEditInput.placeholder = 'New Course';
+    gradesContainer.appendChild(courseEditInput);
+    
+}
+
+
+// Initial call to retrieve student list for the first page
+getStudentList(groupId, currentPage);
+</script>
+
+</body>
+</html>
