@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 40px;
+    margin-bottom: 0px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+main{
+    padding-top: 40px; /* Add padding to top of main content */
+
+}
+
+.wrapper {
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Add some padding to the sides */
+}
+
+.container {
+    padding: 0 60px;
+    display: flex; /* Change display to flex */
+    justify-content: space-between; /* Distribute space between children */
+}
+
+.header_item {
+    color: white;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0 12px;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.header_right {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.signin-box {
+    display: inline-block;
+    color: white;
+    padding: 8px 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    margin: 0 0 0 16px;
+}
+
+.layout-wrapper {
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.page-wrapper{
+    padding:  0 60px;
+    padding-top: 32px;
+}
+
+.subheader{
+    width: fit-content;
+    margin: 0 auto 32px;
+}
+
+.headline{
+    font-size: 165x;
+    line-height: 22px;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+.ribbon_text{
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+.ribbon_text:after {
+    color: #b1b1b1;
+    content: '|';
+    display: inline-block;
+    padding: 0 8px;
+}
+
+.zone-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0 32px;
+}
+
+.big-news {
+    width: calc(50% - ((24px * 2) / 3)); /* Your formula here */
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Add this line to prevent content overflow */
+    top: -20px;
+}
+
+.big-news h2 {
+    font-size: 46px;
+    line-height: 48px;
+    font-weight: 700;
+    overflow-wrap: break-word; /* Add this line to allow word break */
+}
+
+.lead {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: left; /* Align text to the left */
+    margin: 0 0 16px;
+}
+.lead_item{
+    padding: 0 0 12px;
+    margin-left: 24px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.lead_item::before {
+    content: "•"; /* Set marker to bullet point */
+    color: black; /* Optional: Set color of bullet point */
+    display: inline-block; 
+    margin-right: 0.5em;
+}
+
+.small-news{
+    width: calc(25% - ((24px * 2) / 3));
+    display: inline-block; 
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Add this line to prevent content overflow */
+}
+
+.lead_item-with-border{
+    padding: 0 0 12px;
+    margin-left: 24px;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+    margin: 0 0 12px;
+    padding: 0 0 12px;
+}
+
+.lead_item-with-border::before {
+    content: "•"; /* Set marker to bullet point */
+    color: black; /* Optional: Set color of bullet point */
+    display: inline-block; 
+    margin-right: 0.5em;
+}
