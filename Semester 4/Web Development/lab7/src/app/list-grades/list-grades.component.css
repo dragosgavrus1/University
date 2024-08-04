@@ -1,0 +1,44 @@
+/* grades-list.component.css */
+
+/* Style the header */
+h1 {
+    color: #559658;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center; /* Align header text in the middle */
+}
+
+/* Style the container */
+.container {
+margin: 0 auto; /* Center the container horizontally */
+max-width: 800px; /* Limit the width of the container */
+}
+
+/* Style the table */
+table {
+width: 100%; /* Make table width 100% */
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+
+/* Style table header */
+th {
+background-color: #d6e9d4;
+padding: 10px;
+text-align: left;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+background-color: #d6e9d4;
+}
+
+tr:hover {
+background-color: #ddd;
+}
+
+/* Style table cells */
+td {
+padding: 10px;
+}
+

@@ -1,0 +1,54 @@
+<h2>Student List</h2>
+
+<div class="search">
+  <label for="groupId">Group ID:</label>
+  <input type="text" id="groupId" name="groupId" [(ngModel)]="groupId">
+  <button (click)="getStudentList()">Search</button>
+</div>
+
+<div id="studentList">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Password</th>
+      <th>Group ID</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let student of studentList">
+      <td>{{ student.id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.password }}</td>
+      <td>{{ student.group_id }}</td>
+      <td>
+        <button class="view-grades-btn" (click)="viewGrades(student.id)" >View Grades</button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="pagination">
+  <button (click)="prevPage()">Previous</button>
+  <button (click)="nextPage()">Next</button>
+</div>
+
+<div id="gradesContainer" class="grades-container" *ngIf="selectedStudentId">
+  <h2>Grades for Student {{ selectedStudentId }}</h2>
+  <table class="grades-table">
+      <thead>
+          <tr>
+              <th>Course</th>
+              <th>Grade</th>
+              <th>Edit</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let grade of studentGrades">
+              <td>{{ grade.course }}</td>
+              <td>{{ grade.grade }}</td>
+              <td><button (click)="editGrade(grade.grade_id, grade.course, grade.grade)">Edit</button></td>
+          </tr>
+      </tbody>
+  </table>
+  <button class="add-grade-btn" (click)="addGrade()" >Add Grade</button>
+</div>

@@ -1,0 +1,14 @@
+
+<div class="container">
+    <h2>Edit Grade</h2>
+    <div>
+        <label for="newGrade">New Grade:</label>
+        <input type="number" id="newGrade" name="newGrade" [(ngModel)]="newGrade">
+    </div>
+    <div>
+        <label for="newCourse">New Course:</label>
+        <input type="text" id="newCourse" name="newCourse" [(ngModel)]="newCourse">
+    </div>
+    <button (click)="submitEdit()">Submit</button>
+    <button (click)="back()">Back</button>
+</div>

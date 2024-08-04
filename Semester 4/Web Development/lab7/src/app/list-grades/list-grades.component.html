@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Grades List</h1>
+
+    <table>
+    <thead>
+        <tr>
+        <th>Course</th>
+        <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let grade of grades">
+        <td>{{ grade.course }}</td>
+        <td>{{ grade.grade }}</td>
+        </tr>
+    </tbody>
+    </table>
+
+</div>

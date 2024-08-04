@@ -1,0 +1,125 @@
+/* list-students.component.css */
+
+h2 {
+    color: #559658;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+
+.search {
+    text-align: center; /* Align search elements in the middle */
+    margin-bottom: 20px; /* Add some space below the search section */
+}
+
+.search label {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.search button {
+    background-color: #559658;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px; /* Add some space between buttons */
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #3e7f42;
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px; /* Add some border-radius */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.search input[type="text"]:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #559658; /* Change border color on focus */
+}
+
+/* Style the table */
+table {
+    width: 100%; /* Make table width 100% */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Style table header */
+th {
+    background-color: #d6e9d4;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style table rows */
+tr:nth-child(odd) {
+    background-color: #d6e9d4;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    padding: 10px;
+}
+
+.pagination {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.pagination button {
+    background-color: #559658;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px; 
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #3e7f42;
+}
+
+.grades-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grades-table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.grades-table th,
+.grades-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.grades-table th {
+    background-color: #f2f2f2;
+}
+
+.add-grade-btn {
+    margin-top: 10px;
+    background-color: #559658;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-grade-btn:hover {
+    background-color: #3e7f42;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>Add Grade</h2>
+    <div>
+        <label for="grade">Grade:</label>
+        <input type="number" id="grade" name="grade" [(ngModel)]="grade">
+    </div>
+    <div>
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" [(ngModel)]="course">
+    </div>
+    <button (click)="addGrade()">Submit</button>
+    <button (click)="back()">Back</button>
+</div>

@@ -1,0 +1,44 @@
+/* Style the header */
+h2 {
+    color: #559658;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the input fields */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style the buttons */
+button {
+    padding: 10px 20px;
+    background-color: #559658;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4c7d4a;
+}
+
+/* Style the container */
+.container {
+    margin: 0 auto;
+    max-width: 400px;
+}
