@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.view.gui.list.ListController">
+   <ListView fx:id="programsList" layoutX="70.0" layoutY="83.0" prefHeight="200.0" prefWidth="433.0" />
+   <Button fx:id="selectButton" alignment="CENTER" layoutX="250.0" layoutY="326.0" mnemonicParsing="false" text="Select" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+</AnchorPane>
