@@ -1,0 +1,17 @@
+int _x;
+int _i;
+int _count;
+_i = 0;
+_count = 0;
+string _prime = "prime";
+string _not_prime = "not prime";
+
+r(_x);
+
+while ( _i < _x ) do {
+	if ( _x % _i == 0) then { _count = _count + 1; }
+}
+
+if ( _count == 0 ) then { w(_prime); }
+else { w(_not_prime); }
+ 	

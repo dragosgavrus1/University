@@ -1,0 +1,15 @@
+int _x;
+int _y;
+int _z;
+int _min;
+
+r(_x);
+r(_y);
+r(_z);
+
+_min = _x;
+
+if ( _y < _min ) then { _min = _y}
+if ( _z < _min ) then { _min = _z}
+
+w(_min);

@@ -1,0 +1,5 @@
+int _x;
+int _y;
+_x = _x .+ _y;
+write(x);
+
