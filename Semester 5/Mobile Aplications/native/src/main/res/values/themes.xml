@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CarRentalApp"  parent="Theme.AppCompat.Light.DarkActionBar" />
+       <!-- Base application theme. -->
+
+</resources>

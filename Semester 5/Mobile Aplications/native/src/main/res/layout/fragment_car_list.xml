@@ -1,0 +1,31 @@
+<!-- fragment_car_list.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RecyclerView for displaying car list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Add Car button -->
+    <Button
+        android:id="@+id/addCarButton"
+        style="@style/BlueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Car"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+    android:id="@+id/homeButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Home"
+    android:textColor="@android:color/white"
+    android:layout_marginTop="16dp" />
+</LinearLayout>

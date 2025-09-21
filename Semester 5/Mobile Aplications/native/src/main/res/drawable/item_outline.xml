@@ -1,0 +1,13 @@
+<!-- File: res/drawable/item_outline.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" /> <!-- Background color for item -->
+    <corners android:radius="8dp" /> <!-- Rounded corners -->
+    <stroke
+        android:width="2dp"
+        android:color="#BDBDBD" /> <!-- Light grey outline -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" />
+</shape>

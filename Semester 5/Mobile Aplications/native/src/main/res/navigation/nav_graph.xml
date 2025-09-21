@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File: res/navigation/nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/carListFragment">
+
+    <!-- Car List Fragment (Main List Screen) -->
+    <fragment
+        android:id="@+id/carListFragment"
+        android:name="com.example.carrentalapp.fragments.CarListFragment"
+        android:label="Car List"
+        tools:layout="@layout/fragment_car_list" >
+
+        <!-- Navigate to Car Detail Fragment -->
+        <action
+            android:id="@+id/action_carListFragment_to_carDetailFragment"
+            app:destination="@id/carDetailFragment" />
+
+        <!-- Navigate to Car Add Fragment -->
+        <action
+            android:id="@+id/action_carListFragment_to_carAddFragment"
+            app:destination="@id/carAddFragment" />
+    </fragment>
+
+    <!-- Car Detail Fragment (Displays Car Details) -->
+    <fragment
+        android:id="@+id/carDetailFragment"
+        android:name="com.example.carrentalapp.fragments.CarDetailFragment"
+        android:label="Car Details"
+        tools:layout="@layout/fragment_car_detail">
+
+        <argument
+            android:name="car"
+            app:argType="com.example.carrentalapp.models.Car"
+            app:nullable="false" />
+
+        <!-- Navigate to Car Edit Fragment -->
+        <action
+            android:id="@+id/action_carDetailFragment_to_carEditFragment"
+            app:destination="@id/carEditFragment" />
+    </fragment>
+
+    <!-- Car Edit Fragment (Edit Car Details) -->
+    <fragment
+        android:id="@+id/carEditFragment"
+        android:name="com.example.carrentalapp.fragments.CarEditFragment"
+        android:label="Edit Car"
+        tools:layout="@layout/fragment_car_edit">
+        <argument
+            android:name="car"
+            app:argType="com.example.carrentalapp.models.Car"
+            app:nullable="false" />
+    </fragment>
+
+    <!-- Car Add Fragment (Add a New Car) -->
+    <fragment
+        android:id="@+id/carAddFragment"
+        android:name="com.example.carrentalapp.fragments.CarAddFragment"
+        android:label="Add Car"
+        tools:layout="@layout/fragment_car_add" />
+</navigation>
