@@ -1,0 +1,34 @@
+{
+  "name": "intern2024-intro-dgavrus",
+  "version": "1.0.0",
+  "description": "ml rag chatbot service",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "autopep8 --aggressive  --aggressive --in-place -r src && pylint src/",
+    "lint:fix": "autopep8 --aggressive  --aggressive --in-place -r src && pylint src/",
+    "test": "",
+    "clean": "rm -f package-lock.json && rm -fr node_modules",
+    "release": "standard-version",
+    "license-checker": "license-checker --production --summary"
+  },
+  "dependencies": {
+    "husky": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {}
+  },
+  "author": {
+    "name": "Dragos Gavrus",
+    "email": "dgavrus@bitdefender.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@repobit/karma-dev-tools": "^1.0.1"
+  }
+}

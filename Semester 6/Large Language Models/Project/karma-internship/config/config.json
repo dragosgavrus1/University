@@ -1,0 +1,14 @@
+{
+	"LOG_LEVEL": "DEBUG",
+	"TIMER_INTERVAL":10,
+	"SUMMARIZE_ENABLED":true,
+	"OPENAI_API_KEY": "0ade28c57d3447aebcabb231e0dfcb50",
+	"ELASTICSEARCH_URL": "http://elasticsearch-minirag.karma-ml.nmbapp.net:9200",
+	"INDEX_NAME": "intern_dgavrus_minirag_v1",
+	"HUGGINGFACE_MODEL": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+	"AZURE_DEPLOYMENT": "rag_gpt4o_internship_20240513",
+	"AZURE_ENDPOINT": "https://karmarageu.openai.azure.com",
+	"CHUNK_SIZE": 1000,
+	"CHUNK_OVERLAP": 400,
+    "SYSTEM_PROMPT": "Given a chat history and the latest user question which might reference context in the chat history, formulate a standalone question which can be understood without the chat history. Then use the provided context to answer the reformulated question, without saying the question. Respond in the language of the given question. If you don't know the answer, say that you don't know. Use three sentences maximum and keep the answer concise. Chat History: {chat_history} Question: {question} Context: {context} Reformulated Question and Answer:"
+}

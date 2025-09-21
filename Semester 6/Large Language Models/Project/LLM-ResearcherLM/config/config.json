@@ -1,0 +1,11 @@
+{
+	"LOG_LEVEL": "DEBUG",
+	"SUMMARIZE_ENABLED":true,
+	"ELASTICSEARCH_URL": "",
+	"INDEX_NAME": "",
+	"HUGGINGFACE_MODEL": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+	"CHUNK_SIZE": 1000,
+	"CHUNK_OVERLAP": 400,
+    "SYSTEM_PROMPT": "Given a chat history and the latest user question which might reference context in the chat history, formulate a standalone question which can be understood without the chat history. Then use the provided context to answer the reformulated question, without saying the question. Respond in the language of the given question. If you don't know the answer, say that you don't know. Use three sentences maximum and keep the answer concise. Rules you need to use for this chat from previous messages: {rules} Chat History: {chat_history} Question: {question} Context: {context} Reformulated Question and Answer:",
+	"CHAT_RULES_PROMPT":"You are a system that analyzes chat history between a user and a chatbot. Given the conversation history, extract and summarize key behavioral or conversational rules that the chatbot appears to follow. These rules should capture consistent patterns or implicit guidelines the chatbot uses during interactions (e.g., tone, format, response style, constraints). Input: {chat_history} Output: A list of clear, concise rules the chatbot follows during the conversation. Each rule should be phrased as a guideline."
+}
